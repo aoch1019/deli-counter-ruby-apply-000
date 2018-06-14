@@ -1,5 +1,7 @@
 # Write your code here.
 
+number_counter = 1
+
 def line(array)
   if array == []
     puts "The line is currently empty."
@@ -14,9 +16,10 @@ def line(array)
   end
 end
 
-def take_a_number(array, number)
-  array.push(number)
-  puts "Welcome, you are number " + array.length.to_s
+def take_a_number(array)
+  array.push(number_counter)
+  puts "Welcome, you are number " + number_counter "."
+  number_counter += 1
   return array
 end
   
