@@ -14,9 +14,9 @@ def line(array)
   end
 end
 
-def take_a_number(array, name)
-  array.push(name)
-  puts "Welcome, " + name + ". You are number " + array.length.to_s + " in line."
+def take_a_number(array, number)
+  array.push(number)
+  puts "Welcome, you are number " + array.length.to_s
   return array
 end
   
